@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cynox Security</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=2" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"><!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/cynox-fevicon.png">
+
+
+
+</head>
+
+<body>
+
+    <div class="px-3 xl:px-16">
+        <div class="flex justify-between items-center h-15 text-xs md:text-sm bg-transparent">
+            <div class="flex items-center"><img src="assets/img/logo-certin.png" alt="Top Image"
+                    class="h-7 hidden md:block">
+                <p class="ml-2 md:text-sm sm:text-xs">Cynox Security LLP is empanelled with CERT-In (Indian Computer
+                    Emergency Response Team) as an authorized cybersecurity auditor.</p>
+            </div>
+            <div class="hidden md:flex md:text-xs w-3/2 text-right leading-tight"><a
+                    href="mailto:support@cynoxsecurity.com"
+                    class="hidden text-base md:text-sm lg:block hover:text-purple-600">Email: support@cynoxsecurity.com
+                    | <span class="text-white">a</span> </a>
+                <a href="tel:+917303347098" class="hidden lg:block md:text-sm hover:text-purple-600"> Phone: +91 730 334
+                    7098</a>
+            </div>
+            <div class="flex flex-row justify-end lg:hidden gap-2 text-right leading-tight"><a
+                    href="mailto:support@cynoxsecurity.com" class="hover:text-purple-500"><img
+                        src="assets/img/mail.svg" /></a> |
+                <a href="tel:+917303347098" class=" hover:text-purple-500 lg:hidden"><img
+                        src="assets/img/call.svg" /></a>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <header id="navbar" class="sticky top-5 z-50 text-gray-800 scrolled shadow-md rounded-xl">
+            <nav class="flex justify-between items-center h-20 px-4">
+                <!-- Left Section: Menu Icon + Logo -->
+                <div class="flex items-center gap-4">
+                    <!-- Menu Icon (Mobile only) -->
+                    <button id="menu-toggle" class="lg:hidden">
+                        <img src="assets/img/bars-solid.svg" alt="Menu" class="h-7 w-7" />
+                    </button>
+                    <!-- Logo -->
+                    <div class="text-base xl:text-xl font-bold">
+                        <img src="assets/img/logo.png" alt="Logo" class="h-5 md:h-8 lg:h-10 ">
+                    </div>
+                </div>
+                <!-- Nav Items (Desktop Only) -->
+                <ul id="desktop-nav" class="hidden lg:flex gap-8 items-center h-full lg:text-sm">
+                    <li class="relative group">
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Auditing</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/compliance-and-certification.html" class="dropdown-item">Complaince and
+                                    certification</a>
+                            </li>
+                            <li><a href="/threat-management.html" class="dropdown-item">Threat Management</a></li>
+                            <li><a href="/security-infrastructure.html" class="dropdown-item">Security
+                                    Infrastructure</a></li>
+                            <li><a href="/vulnerability-management.html" class="dropdown-item">Vulnerability
+                                    Management</a></li>
+                            <li><a href="/dynamic-penetration-testing.html" class="dropdown-item">Dynamic Penetration
+                                    Testing</a></li>
+                            <li><a href="/fraud-investigation.html" class="dropdown-item">Fraud Investigation</a></li>
+                            <li><a href="/manage-security-operation-center.html" class="dropdown-item">Manage Security
+                                    Operation
+                                    Center</a></li>
+                            <li><a href="/managed-it-security.html" class="dropdown-item">Managed IT Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/web-application-testing.html" class="dropdown-item">Web Application
+                                    Testing</a></li>
+                            <li><a href="/mobile-app-security-testing.html" class="dropdown-item">Mobile App Security
+                                    Testing</a></li>
+                            <li><a href="/network-penetration-testing.html" class="dropdown-item">Network Penetration
+                                    Testing</a></li>
+                            <li><a href="/database-assessment-service.html" class="dropdown-item">Database Assessment
+                                    Service</a></li>
+                            <li><a href="/api-and-web-service-testing.html" class="dropdown-item">API & Web Service
+                                    Testing</a>
+                            </li>
+                            <li><a href="/cloud-security-assessment.html" class="dropdown-item">Cloud Security
+                                    Assessment</a></li>
+                            <li><a href="/scada-and-ics-system-security.html" class="dropdown-item">SCADA & ICS System
+                                    Security</a>
+                            </li>
+                            <li><a href="/source-code-review.html" class="dropdown-item">Source Code Review</a></li>
+                            <li><a href="/firewall-security-review.html" class="dropdown-item">Firewall Security
+                                    Review</a></li>
+                            <li><a href="/ai-machine-learning-testing.html" class="dropdown-item">AI Machine Learning
+                                    Testing</a></li>
+                            <li><a href="/iot-device-security-assessment.html" class="dropdown-item">IoT Device Security
+                                    Assessment</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Add more dropdowns here -->
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Data Privacy</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/gdpr-compliance.html" class="dropdown-item">GDPR Compliance</a></li>
+                            <li><a href="/cyber-insurance.html" class="dropdown-item">Cyber Insurance</a></li>
+                            <li><a href="/privacy-by-design.html" class="dropdown-item">Privacy By Design</a></li>
+                            <li><a href="/vendor-supplier-risk-management.html" class="dropdown-item">Vendor Supplier
+                                    Risk
+                                    Management</a></li>
+                            <li><a href="/avirtual-dpo.html" class="dropdown-item">AVirtual DPO</a></li>
+                            <li><a href="/privacy-impact-assessment.html" class="dropdown-item">Privacy Impact
+                                    Assessment</a></li>
+                            <li><a href="/data-protection-alert.html" class="dropdown-item">Data Protection Alert</a>
+                            </li>
+                            <li><a href="/dpia.html" class="dropdown-item">DPIA</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Company</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/about-us.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="/career.html" class="dropdown-item">Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Training</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/awareness-training.html" class="dropdown-item">Cyber Security Awareness
+                                    Training</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="/verify-certificate.html" class="nav-link">Verify Certificate</a>
+                    </li>
+                </ul>
+                <!-- Right: Get in Touch Button (Always visible) -->
+                <a href="/contact-us.html" class="button3">
+                    <span class="text-sm sm:text-base">Get in Touch</span>
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+
+            </nav>
+            <!-- Floating Mobile Menu -->
+            <div id="mobile-menu" class="absolute top-20 left-4 w-64 text-white shadow-lg rounded-lg p-4 hidden z-40">
+                <ul class="space-y-2">
+                    <li>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400"><a
+                                    href="/index.html">Home</a>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Auditing</summary>
+                            <ul class="pl-6 ">
+                                <li><a href="/compliance-and-certification.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Complaince and
+                                        certification</a></li>
+                                <li><a href="/threat-management.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Threat
+                                        Management</a></li>
+                                <li><a href="/security-infrastructure.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Security
+                                        Infrastructure</a></li>
+                                <li><a href="/vulnerability-management.html"
+                                        class="block text-sm  py-1 hover:text-purple-400">Vulnerability Management</a>
+                                </li>
+                                <li><a href="/dynamic-penetration-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Dynamic
+                                        Penetration Testing</a></li>
+                                <li><a href="/fraud-investigation.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Fraud
+                                        Investigation</a></li>
+                                <li><a href="/manage-security-operation-center.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Manage Security Operation
+                                        Center</a>
+                                </li>
+                                <li><a href="/managed-it-security.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Managed IT
+                                        Security</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Services</summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/web-application-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Web
+                                        Application Testing</a></li>
+                                <li><a href="/mobile-app-security-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Mobile
+                                        App Security</a></li>
+                                <li><a href="/network-penetration-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Network
+                                        Penetration Testing</a></li>
+                                <li><a href="/database-assessment-service.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Database
+                                        Assessment</a></li>
+                                <li><a href="/cloud-security-assessment.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Cloud
+                                        Security Assessment</a></li>
+                                <li><a href="/scada-and-ics-system-security.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">SCADA
+                                        &
+                                        ICS System Security</a></li>
+                                <li><a href="/source-code-review.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Source Code
+                                        Review</a></li>
+                                <li><a href="/firewall-security-review.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Firewall
+                                        Security Review</a></li>
+                                <li><a href="/ai-machine-learning-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">AI
+                                        Machine Learning Testing</a></li>
+                                <li><a href="/iot-device-security-assessment.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">IoT
+                                        Device Security Assessment</a></li>
+                            </ul>
+                        </details>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Data Privacy</summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/gdpr-compliance.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">GDPR
+                                        Compliance</a>
+                                </li>
+                                <li><a href="/cyber-insurance.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Cyber
+                                        Insurance</a>
+                                </li>
+                                <li><a href="/privacy-by-design.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Privacy By
+                                        Design</a></li>
+                                <li><a href="/vendor-supplier-risk-management.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Vendor Risk Management</a>
+                                </li>
+                                <li><a href="/privacy-impact-assessment.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Privacy
+                                        Impact Assessment</a></li>
+                                <li><a href="/data-protection-alert.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Data
+                                        Protection
+                                        Alert</a></li>
+                                <li><a href="/dpia.html" class="block text-sm py-1 hover:text-purple-400 ">DPIA</a></li>
+                            </ul>
+                        </details>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400 ">Company
+                            </summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/about-us.html" class="block text-sm py-1 hover:text-purple-400 ">About
+                                        Us</a>
+                                </li>
+                                <li><a href="/verify-certificate.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Verify
+                                        Certificate</a></li>
+                                <li><a href="/career.html" class="block text-sm py-1 hover:text-purple-400 ">Career</a>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Training</summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/awareness-training.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Cyber Security
+                                        Awareness Training</a>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Start Breadcrumb Section -->
+        <section class="relative bg-cover bg-center bg-no-repeat text-white flex justify-center"
+            style="background-image: linear-gradient(270deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.55)), url('assets/img/cynox-security.webp');">
+            <div class="py-20 px-6 md:px-24">
+                <div class="text-5xl font-bold mb-4 text-white">Cynox</div>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white">Cloud Security Compliance: Ensuring
+                    Regulatory Adherence & Data Protection</h1>
+            </div>
+        </section>
+        <!-- End Breadcrumb Section -->
+
+        <!-- Start Apply Position Section -->
+        <div class="apply-position-section pt-32 mb-24">
+            <div class="container-fluid pl-24">
+                <div class="row gap-6 lg:gap-16">
+                    <div class="col-lg-8 pr-24">
+                        <div class="job-description mb-12">
+
+                            <p><span class="text-purple-500">Cloud Security Compliance (CSC)</span> is a fundamental
+                                aspect of an organization's
+                                cybersecurity strategy, ensuring that cloud environments, service providers, and
+                                applications comply with strict security and regulatory standards. A well-defined CSC
+                                framework helps businesses protect sensitive data, mitigate risks, and maintain
+                                compliance with industry regulations.</p><br>
+                            <p>With the growing adoption of cloud technologies, organizations face increasing security
+                                challenges, including data breaches, misconfigurations, and evolving regulatory
+                                mandates. Cyber attackers frequently exploit vulnerabilities in cloud infrastructures,
+                                weak access controls, and insufficient compliance measures. Regular assessments and
+                                proactive compliance management help fortify cloud security and ensure business
+                                continuity.</p><br>
+
+                            <h2 class="text-2xl text-blue-400 font-semibold">How Cloud Security Compliance Works</h2>
+                            <p>A structured CSC approach includes:</p>
+
+                            <ul class="list-disc pl-6">
+                                <li>Risk Assessment & Analysis – Identifying and evaluating security risks in cloud
+                                    environments.</li>
+                                <li>Cloud Security Audits – Conducting thorough security assessments to ensure adherence
+                                    to best practices.</li>
+                                <li>Regulatory Compliance Assessments – Ensuring alignment with standards like ISO
+                                    27017, NIST, GDPR, SOC 2, and HIPAA.</li>
+                                <li>Continuous Monitoring & Threat Detection – Implementing real-time surveillance to
+                                    detect and respond to security threats.</li>
+                                <li>Incident Response & Disaster Recovery – Developing action plans to manage
+                                    cloud-based security incidents.</li>
+                                <li>Security Awareness & Compliance Training – Educating employees and cloud service
+                                    providers on security policies and compliance requirements.</li>
+                            </ul><br>
+
+                            <h3 class="text-xl font-bold text-purple-500">Key Benefits of Cloud Security Compliance
+                            </h3>
+                            <ul class="list-disc pl-6">
+                                <li>Enhanced Data Security – Protects cloud-hosted sensitive information from
+                                    unauthorized access and breaches.</li>
+                                <li>Regulatory Adherence – Ensures compliance with industry standards and legal
+                                    mandates.</li>
+                                <li>Reduced Cloud Security Risks – Strengthens defenses against cyber threats targeting
+                                    cloud infrastructures.</li>
+                                <li>Privacy & Data Protection – Safeguards business and customer data through robust
+                                    security controls.</li>
+                                <li>Business Continuity & Resilience – Minimizes downtime and operational disruptions
+                                    caused by security incidents.</li>
+                            </ul><br>
+
+                            <h3 class="text-xl font-bold text-blue-400">Cynox Cloud Security Compliance Services
+                            </h3>
+                            <ul class="list-disc pl-6">
+                                <li>Cloud Security Risk Assessments – Evaluating cloud service security postures and
+                                    potential vulnerabilities.</li>
+                                <li>Security & Compliance Audits – Ensuring cloud environments meet industry-specific
+                                    compliance standards.</li>
+                                <li>Continuous Compliance Monitoring – Deploying automated tools for real-time
+                                    compliance tracking.</li>
+                                <li>Threat Intelligence & Cloud Security Integration – Leveraging advanced analytics for
+                                    proactive risk management.</li>
+                                <li>Incident Response & Risk Mitigation – Developing comprehensive response strategies
+                                    for cloud-based security threats.</li>
+                                <li>Regulatory Compliance Support – Assisting businesses in meeting cloud security
+                                    regulations and industry mandates.</li>
+                            </ul>
+                            <br>
+                            <p>By leveraging Cynox’s Cloud Security Compliance services, organizations can effectively
+                                manage cloud-related risks, enhance cybersecurity resilience, and maintain compliance
+                                with evolving regulatory frameworks, ensuring a secure and compliant cloud ecosystem</p>
+
+                        </div>
+                    </div>
+
+                    <!-- Job Summary Area -->
+                    <div class="bg-gray-100 rounded-xl p-6 shadow-md border-l-4 h-1/4 lg:w-1/2 w-full border-blue-400">
+                        <h4 class="text-lg font-bold text-blue-400 mb-4">Our Services</h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span> ISO
+                                Implementation
+                            </li>
+                            <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span> PCI
+                                DSS</li>
+                            <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span> HIPAA
+                                Consulting
+                            </li>
+                            <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span> SOC
+                                Consulting</li>
+                            <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span> Third
+                                Party Risk
+                                Assessment</li>
+                            <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span> Cloud
+                                Security
+                                Compliance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Apply Position Section -->
+
+
+        <!-- End Apply Position Section -->
+
+    </div>
+    <!--Footer Section-->
+    <footer class="bg-gray-800 text-gray-300 py-12 font-sans text-xs">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-10">
+                <!-- Auditing Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Auditing</h6>
+                    <ul>
+                        <li><a href="/compliance-and-certification.html" class="hover:text-blue-500">Compliance &
+                                Certification</a>
+                        </li>
+                        <li><a href="/threat-management.html" class="hover:text-blue-500">Threat Management</a></li>
+                        <li><a href="/security-infrastructure.html" class="hover:text-blue-500">Security
+                                Infrastructure</a></li>
+                        <li><a href="/vulnerability-management.html" class="hover:text-blue-500">Vulnerability
+                                Management</a></li>
+                        <li><a href="/dynamic-penetration-testing.html" class="hover:text-blue-500">Dynamic Penetration
+                                Testing</a>
+                        </li>
+                        <li><a href="/fraud-investigation.html" class="hover:text-blue-500">Fraud Investigation</a></li>
+                        <li><a href="/manage-security-operation-center.html" class="hover:text-blue-500">Manage Security
+                                Operation
+                                Center</a></li>
+                        <li><a href="/managed-it-security.html" class="hover:text-blue-500">Managed IT Security</a></li>
+                    </ul>
+                </div>
+                <!-- Services Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Services</h6>
+                    <ul>
+                        <li><a href="/web-application-testing.html" class="hover:text-blue-500">Web Application
+                                Testing</a></li>
+                        <li><a href="/mobile-app-security-testing.html" class="hover:text-blue-500">Mobile App Security
+                                Testing</a>
+                        <li><a href="/network-penetration-testing.html" class="hover:text-blue-500">Network Penetration
+                                Testing</a>
+                        </li>
+                        <li><a href="/database-assessment-service.html" class="hover:text-blue-500">Database Assessment
+                                Service</a>
+                        </li>
+                        <li><a href="/api-and-web-service-testing.html" class="hover:text-blue-500">API & Web Service
+                                Testing</a>
+                        </li>
+                        <li><a href="/cloud-security-assessment.html" class="hover:text-blue-500">Cloud Security
+                                Assessment</a></li>
+                        <li><a href="/scada-and-ics-system-security.html" class="hover:text-blue-500">SCADA & ICS System
+                                Security</a>
+                        </li>
+                        <li><a href="/source-code-review.html" class="hover:text-blue-500">Source Code Review</a></li>
+                        <li><a href="/firewall-security-review.html" class="hover:text-blue-500">Firewall Security
+                                Review</a></li>
+                        <li><a href="/ai-machine-learning-testing.html" class="hover:text-blue-500">AI Machine Learning
+                                Testing</a>
+                        </li>
+                        <li><a href="/iot-device-security-assessment.html" class="hover:text-blue-500">IoT Device
+                                Security
+                                Assessment</a></li>
+                    </ul>
+                </div>
+                <!-- Data Privacy Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Data Privacy</h6>
+                    <ul>
+                        <li><a href="/gdpr-compliance.html" class="hover:text-blue-500">GDPR Compliance</a></li>
+                        <li><a href="/cyber-insurance.html" class="hover:text-blue-500">Cyber Insurance</a></li>
+                        <li><a href="/privacy-by-design.html" class="hover:text-blue-500">Privacy By Design</a></li>
+                        <li><a href="/vendor-supplier-risk-management.html" class="hover:text-blue-500">Vendor Supplier
+                                Risk
+                                Management</a></li>
+                        <li><a href="/avirtual-dpo.html" class="hover:text-blue-500">AVirtual DPO</a></li>
+                        <li><a href="/privacy-impact-assessment.html" class="hover:text-blue-500">Privacy Impact
+                                Assessment</a></li>
+                        <li><a href="/data-protection-alert.html" class="hover:text-blue-500">Data Protection Alert</a>
+                        </li>
+                        <li><a href="/dpia.html" class="hover:text-blue-500">DPIA</a></li>
+                    </ul>
+                </div>
+                <!-- Company Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Company</h6>
+                    <ul>
+                        <li><a href="/index.html" class="hover:text-blue-500">Home</a></li>
+                        <li><a href="/about-us.html" class="hover:text-blue-500">About Us</a></li>
+                        <li><a href="/career.html" class="hover:text-blue-500">Career</a></li>
+                        <li><a href="/awareness-training.html" class="hover:text-blue-500">Training</a></li>
+                        <li><a href="/contact-us.html" class="hover:text-blue-500">Contact Us</a></li>
+                        <li><a href="/verify-certificate.html" class="hover:text-blue-500">Verify Certificate</a></li>
+                    </ul>
+                </div>
+                <!-- Head Office Section -->
+                <div>
+                    <h6 class="text-base font-semibold mb-4">Head Office</h6>
+                    <p class="hover:text-blue-500">332, 3rd Floor, Ashiana Trade Centre, Adityapur,<br> Jamshedpur,
+                        Jharkhand
+                        831013.<br>Phone No: +91
+                        7303347098<br>Email: support@cynoxsecurity.com</p>
+                    <h6 class="text-base font-semibold mb-3 mt-6">Regional Office</h6>
+                    <p class="hover:text-blue-500">Dwarka Road, Near Dwarka Sector 21 Metro Station, <br> Dwarka, Delhi
+                        Cantonment, Delhi 110078.<br>Phone No:
+                        +91 7303347098<br>Email: support@cynoxsecurity.com</p>
+                    <p class="hover:text-blue-500 mt-2">#808, A Block, Sahakarnagar Bengaluru - 560092, Bengaluru,
+                        Bengaluru
+                        560092.<br>Phone No: +91
+                        7303347098<br>Email: support@cynoxsecurity.com</p>
+                </div>
+                <!-- Image Section (Government Verified Logos) -->
+            </div>
+            <div class="flex justify-between items-center mr-20">
+                <div class="flex justify-center md:justify-start">
+                    <img src="assets/img/log0s.png" alt="Government Verified Logos" class="max-w-full h-auto">
+                </div>
+                <div class="flex items-center">
+                    <ul class="flex space-x-6">
+                        <li><a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A14507092&keywords=cynox%20security%20llp.&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=18436437-20b2-44dc-a36f-f6bcdee5c740&sid=QKE&spellCorrectionEnabled=true"
+                                class="text-gray-400 hover:text-blue-500"><i class="bx bxl-linkedin text-2xl"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/cynoxsecurity.official/"
+                                class="text-gray-400 hover:text-purple-500"><i
+                                    class="bx bxl-instagram-alt text-2xl"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/@CYNOXSECURITY" class="text-gray-400 hover:text-red-500"><i
+                                    class="bx bxl-youtube text-2xl"></i></a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-500"><i
+                                    class="bx bxl-whatsapp text-2xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-10 border-gray-700" />
+            <p class="text-gray-400 text-sm text-center mt-2">Copyright © 2025 Cynox Security. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleBtn = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            if (toggleBtn && mobileMenu) {
+                toggleBtn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle("hidden");
+                });
+            }
+
+            dropdowns.forEach((dropdown) => {
+                const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+                if (!dropdownMenu) return;
+
+                const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+                if (isTouchDevice) {
+                    dropdown.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        dropdownMenu.classList.toggle("hidden");
+                    });
+                } else {
+                    dropdown.addEventListener("mouseenter", () => {
+                        dropdownMenu.classList.remove("hidden");
+                    });
+                    dropdown.addEventListener("mouseleave", () => {
+                        dropdownMenu.classList.add("hidden");
+                    });
+                }
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener("click", (e) => {
+                if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+                    // Check if clicked outside the menu and toggle button
+                    if (!mobileMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                        mobileMenu.classList.add("hidden");
+                    }
+                }
+
+                dropdowns.forEach((dropdown) => {
+                    const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+                    if (dropdownMenu && !dropdownMenu.classList.contains("hidden")) {
+                        if (!dropdown.contains(e.target)) {
+                            dropdownMenu.classList.add("hidden");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

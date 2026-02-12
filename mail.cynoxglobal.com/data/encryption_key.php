@@ -1,0 +1,1 @@
+<?php \Aurora\System\Api::$sEncryptionKey = "MTcyOTk0MjM0MC4wNjgyMzA4NDE3Mjk5NDIzNDAuMDY4Mjc3NjY=";

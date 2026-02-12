@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cynox Security</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=2" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"><!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="px-3 xl:px-16">
+        <div class="flex justify-between items-center h-15 text-xs md:text-sm bg-transparent">
+            <div class="flex items-center"><img src="assets/img/logo-certin.png" alt="Top Image"
+                    class="h-7 hidden md:block">
+                <p class="ml-2 md:text-sm sm:text-xs">Cynox Security LLP is CERT-In empanelled auditor organization.</p>
+            </div>
+            <div class="hidden md:flex md:text-xs w-3/2 text-right leading-tight"><a
+                    href="mailto:support@cynoxsecurity.com"
+                    class="hidden text-base md:text-sm lg:block hover:text-purple-600">Email: support@cynoxsecurity.com
+                    | <span class="text-white">a</span> </a>
+                <a href="tel:+917303347098" class="hidden lg:block md:text-sm hover:text-purple-600"> Phone: +91 730 334
+                    7098</a>
+            </div>
+            <div class="flex flex-row justify-end lg:hidden gap-2 text-right leading-tight"><a
+                    href="mailto:support@cynoxsecurity.com" class="hover:text-purple-500"><img
+                        src="assets/img/mail.svg" /></a> |
+                <a href="tel:+917303347098" class=" hover:text-purple-500 lg:hidden"><img
+                        src="assets/img/call.svg" /></a>
+            </div>
+        </div>
+        <!--<svg class="colorful opacity-50 z-[-1]" viewBox="0 0 986 916">-->
+        <!--  <linearGradient gradientTransform="rotate(45)" id="color-gradient">-->
+        <!--    <stop id="color1" offset="0" />-->
+        <!--    <stop id="color2" offset="1" />-->
+        <!--  </linearGradient>-->
+        <!--  <path fill="url(#color-gradient)"-->
+        <!--    d="M986,901.39371l-18.93406-1.01127a14.19106,14.19106,0,0,0-3.93907-8.57553c-.27793-.28741-.56477-.54671-.85868-.80332L986,854.17268v-7.746l-27.257,42.3022a14.3008,14.3008,0,0,0-8.46366-1.03634L906.82369,760.72023,986,728.2851v-4.53974l-80.53936,32.991-69.3102-202.50414a14.28443,14.28443,0,0,0,3.36321-2.41657c.06174-.0541.11225-.12107.172-.17872l-.00146-.00152L986,627.44156v-4.72383L842.21327,548.221a14.10437,14.10437,0,0,0,.86087-1.994L986,514.31023v-4.3L843.8634,541.74893a14.30113,14.30113,0,0,0-.45386-3.74508l65.08807-76.3511,42.49884-49.84658a14.28667,14.28667,0,0,0,11.5687,1.62258L986,461.77785V452.1533l-19.62-40.48248a14.41107,14.41107,0,0,0,2.11729-1.68076,14.19046,14.19046,0,0,0,3.4319-5.263L986,407.47956v-4.27349l-13.20175-2.58248a14.24546,14.24546,0,0,0-.11431-2.9237L986,393.72236v-4.37969l-14.51087,4.33455a14.23172,14.23172,0,0,0-16.63193-7.72865L844.97194,119.54263c.32429-.19519.64029-.40758.95287-.63192L986,239.13992v-5.53051L855.69209,121.76566,986,154.53523v-4.32577L849.10854,115.78219a14.26375,14.26375,0,0,0-21.37722-18.74557c-.32478.314-.62869.64382-.91431.97533L670.84253,0h-7.884L824.5826,101.5644a14.31921,14.31921,0,0,0-1.1582,6.896l-163.39963,38.093L639.30187,0h-4.23775L655.921,147.50786,408.66406,205.15225a14.08159,14.08159,0,0,0-1.67367-3.04276L616.10005,0h-6.04563L404.07152,199.08728a14.21546,14.21546,0,0,0-5.54613-2.608L413.088,0h-4.20847l-14.536,196.16792c-.44092.03422-.88649.0896-1.31815.16213L329.17822,0H324.048l64.94313,197.63837a14.2918,14.2918,0,0,0-6.04539,5.78041l-98.205-37.36994L312.733,0h-4.2558l-27.736,164.52569-49.73415-18.925a14.26,14.26,0,0,0-3.25023-14.48147c-.314-.32481-.64394-.62863-.97824-.917L298.29883,0h-4.78555L223.22155,127.9678a14.3017,14.3017,0,0,0-11.60116.07808L155.503,40.97924,247.17846,0H236.893L153.20006,37.412,129.08661,0H124.0917L149.322,39.14488,26.33271,94.122a14.41624,14.41624,0,0,0-1.77354-2.243,14.18531,14.18531,0,0,0-6.94962-3.9507L25.26,0H21.048L13.43061,87.56547a14.27589,14.27589,0,1,0,14.32206,18.96931l175.49448,33.88636a14.23214,14.23214,0,0,0,15.00193,14.85556l34.15476,148.4391A14.26615,14.26615,0,1,0,268.11134,327.01l-1.39843,1.563,348.172,311.432a14.25509,14.25509,0,0,0,10.07791,21.98871l3.5971,195.41186a14.27794,14.27794,0,1,0,16.20491,17.48172l293.85065,27.60754a14.26555,14.26555,0,0,0,28.22528,2.07913L986,905.59723ZM207.57066,130.77585a14.191,14.191,0,0,0-3.53182,5.5263L28.54565,102.41726a14.29584,14.29584,0,0,0-.50175-4.46179L151.62216,42.712l56.46715,87.6125C207.91789,130.47361,207.73732,130.61476,207.57066,130.77585Zm632.04841-9.35641a14.21992,14.21992,0,0,0,1.46943-.2818L951.00829,387.62537a14.24055,14.24055,0,0,0-6.62784,10.6119L837.0955,401.33194ZM837.05743,405.533l107.50627-3.10156a14.20062,14.20062,0,0,0,3.2434,6.64059l-42.98442,50.4214-63.29081,74.24581a14.45786,14.45786,0,0,0-1.67355-2.10207,14.18686,14.18686,0,0,0-3.912-2.84745ZM835.42549,121.3765,832.89777,401.453,707.814,405.06049a14.05788,14.05788,0,0,0-5.56212-8.28287L833.47852,120.94415A14.41684,14.41684,0,0,0,835.42549,121.3765ZM816.12663,546.24744l-149.49208,78.3535,27.48617-201.9731a14.19939,14.19939,0,0,0,9.25791-3.57312l-.00012-.00006L817.90364,533.37573A14.27956,14.27956,0,0,0,816.12663,546.24744Zm-154.05,80.742-23.75645,12.452a14.0747,14.0747,0,0,0-1.253-1.51467,14.2449,14.2449,0,0,0-4.433-3.10156l55.14-196.6773Zm44.01782-211.15316a14.21042,14.21042,0,0,0,2.08178-6.58771l124.68564-3.59807-1.09366,121.811a14.24859,14.24859,0,0,0-10.97477,2.85989ZM824.37861,112.54466a14.21789,14.21789,0,0,0,3.00939,4.67327,14.42061,14.42061,0,0,0,2.302,1.92542L698.51561,394.8597a14.1752,14.1752,0,0,0-3.47973-.70506L660.61552,150.722ZM409.6168,209.23787,656.51174,151.6807l34.32971,242.7724a14.20233,14.20233,0,0,0-6.69311,3.55025L414.61867,220.54465l-6.29049-4.14022A14.26736,14.26736,0,0,0,409.6168,209.23787ZM385.46542,220.633a14.26334,14.26334,0,0,0,19.85068.03227c.25011-.24173.4757-.49871.70556-.75417l67.29015,44.29953L681.54962,401.31566c-.21924.38287-.4147.77606-.5938,1.173L272.464,316.90017a14.23583,14.23583,0,0,0-2.41315-8.081ZM257.47976,302.50708c-.34454.01751-.68713.04844-1.027.0879L222.365,154.44538a14.02927,14.02927,0,0,0,6.71287-5.08572l50.95274,19.3889Zm9.73947,3.19312a14.16889,14.16889,0,0,0-5.55223-2.78413l22.36315-132.64863,97.42055,37.07465a14.26805,14.26805,0,0,0,1.45821,9.95613Zm350.471,331.17908L269.51562,325.44288l-.15629.1747a14.25475,14.25475,0,0,0,2.44756-4.56725L679.7964,406.53356a14.2197,14.2197,0,0,0,8.31749,14.85587l-59.5218,212.30289A14.24335,14.24335,0,0,0,617.69027,636.87928ZM632.51689,844.199,629.16051,661.92a14.25092,14.25092,0,0,0,11.11264-18.75765l21.10832-11.06419Zm2.38813,13.57982,31.03581-228.07633,152.13643-79.74192a14.12149,14.12149,0,0,0,1.25446,1.51608,14.37442,14.37442,0,0,0,1.18736,1.08452L636.40594,858.299A13.70234,13.70234,0,0,0,634.905,857.77886Zm8.27638,6.41161a14.26946,14.26946,0,0,0-1.99735-2.63414l.00134.00713a14.44034,14.44034,0,0,0-1.18516-1.08946L824.11385,554.73409a14.321,14.321,0,0,0,8.06946.85993l69.39011,202.74361ZM939.02,898.31905,645.163,870.705a14.29558,14.29558,0,0,0-.39066-2.62865l258.15715-105.762L946.30863,889.0506A14.1907,14.1907,0,0,0,939.02,898.31905Z" />-->
+        <!--</svg>-->
+        <!--<svg class="monochrome" viewBox="0 0 432 326">-->
+        <!--  <polygon points="11.429 326 0 315.796 0 318.355 8.563 326 11.429 326" />-->
+        <!--  <path-->
+        <!--    d="M430.17721,195.234a6.48738,6.48738,0,0,0-10.65277,2.01519L165.77727,133.55257a6.48163,6.48163,0,0,0-9.7124-8.50039c-.14783.14256-.28373.29029-.41548.44233L74.09431,74.34194a6.47741,6.47741,0,0,0-9.707-7.86145L0,0V2.73729L63.01467,67.8005a6.41291,6.41291,0,0,0-1.23038,2.74957L0,68.25785v1.90381l61.71382,2.29052A6.41187,6.41187,0,0,0,62.883,75.49951L0,136.16468v2.64872L64.2099,76.86816A6.47047,6.47047,0,0,0,68.107,78.21054l9.87862,69.73355L0,166.09071v1.956L78.25629,149.8372,93.85522,259.95388a6.458,6.458,0,0,0-3.04246,1.60944L0,201.884v2.28146l89.63111,58.9007a5.33963,5.33963,0,0,0-.2674.535L0,244.91326v1.94041l88.84,18.57721a6.448,6.448,0,0,0,3.782,6.74109L77.50256,326h1.97588L92.4616,279.77542,86.15964,326h1.92393l7.26237-53.26551a6.45927,6.45927,0,0,0,4.2079-1.62142l-.00067-.00073,52.04419,51.85437A6.45378,6.45378,0,0,0,150.47242,326h12.88071a6.46832,6.46832,0,0,0-.16441-.93361l29.57973-34.63175L212.07928,267.825a6.49785,6.49785,0,0,0,5.25688.73567l20.23475,41.673L166.82905,326h8.75521l62.84034-14.0064L245.22611,326h2.11951l-7.00885-14.434,97.462-21.72322a6.43233,6.43233,0,0,0,1.39082,2.1741c.12347.12748.25352.24311.38424.358L317.8071,326h2.26729l21.09886-32.5928a6.33922,6.33922,0,0,0,.652.25619L336.26022,326h1.937l5.50906-32.01246a6.4864,6.4864,0,0,0,2.779-.56009L367.2215,326h2.25791l-21.38587-33.59492c.08954-.07805.18182-.15046.26795-.2335a6.46513,6.46513,0,0,0,.55376-8.69779l72.935-78.3973a6.45925,6.45925,0,0,0,2.94147,1.09234L429.05118,326h1.90333l-4.26163-119.90181a6.47047,6.47047,0,0,0,3.48433-10.86417Zm-11.11327,3.86a6.47433,6.47433,0,0,0,.037,1.55734L289.15082,239.39838,168.76954,136.26663ZM69.99325,77.93958a6.46138,6.46138,0,0,0,2.66456-1.54823c.14783-.14256.28373-.29174.41548-.44379l81.55922,51.15549a6.48408,6.48408,0,0,0-.52671,3.12782L79.84861,147.50723ZM95.76173,259.81849,80.12058,149.40028,154.54,132.08234a6.44735,6.44735,0,0,0,1.3664,2.12017,6.54614,6.54614,0,0,0,1.04593.87354L97.3429,260.13832A6.45157,6.45157,0,0,0,95.76173,259.81849Zm62.13162,60.46686a6.48342,6.48342,0,0,0-4.98869,1.29825l-52.11837-51.931a6.43683,6.43683,0,0,0,.94506-2.98964l56.65983-1.631Zm.51471-57.15787-56.83929,1.63924a6.37405,6.37405,0,0,0-2.52842-3.75716l59.635-125.11468a6.55325,6.55325,0,0,0,.88452.19673Zm32.68815,26.32863-28.76105,33.677a6.55636,6.55636,0,0,0-.76086-.95324,6.44468,6.44468,0,0,0-1.77707-1.29168l.50472-55.9085,48.85358-1.406a6.43638,6.43638,0,0,0,1.47329,3.01159Zm17.97313-27.78719-48.75045,1.40081,1.14631-126.95994a6.46572,6.46572,0,0,0,.66773-.12749l49.95079,120.87518A6.45774,6.45774,0,0,0,209.06934,261.66892Zm4.76495-5.57355-49.93794-120.839c.14759-.08834.29037-.18457.43327-.2864L286.978,240.047,221.39288,259.6003A6.47085,6.47085,0,0,0,213.83429,256.09537Zm25.64806,53.70991-20.41189-42.045a6.55114,6.55114,0,0,0,.96224-.762,6.43672,6.43672,0,0,0,1.56016-2.38614l115.78468,22.6088a6.50729,6.50729,0,0,0,.00749.763Zm98.26359-24.44975L221.99013,262.74928a6.45479,6.45479,0,0,0-.05227-1.32657l66.76269-19.90538,49.6678,42.55473A6.40515,6.40515,0,0,0,337.74594,285.35553Zm9.7699-3.18181a6.49689,6.49689,0,0,0-7.90756.45419l-48.73784-41.755,128.77327-38.39578a6.36966,6.36966,0,0,0,.80721,1.29922Z" />-->
+        <!--</svg>-->
+        <!-- Navbar -->
+        <header id="navbar" class="sticky top-5 z-50 text-gray-800 scrolled shadow-md rounded-xl">
+            <nav class="flex justify-between items-center h-20 px-4">
+                <!-- Left Section: Menu Icon + Logo -->
+                <div class="flex items-center gap-4">
+                    <!-- Menu Icon (Mobile only) -->
+                    <button id="menu-toggle" class="lg:hidden">
+                        <img src="assets/img/bars-solid.svg" alt="Menu" class="h-7 w-7" />
+                    </button>
+                    <!-- Logo -->
+                    <div class="text-base xl:text-xl font-bold">
+                        <img src="assets/img/logo.png" alt="Logo" class="h-5 md:h-8 lg:h-10 ">
+                    </div>
+                </div>
+                <!-- Nav Items (Desktop Only) -->
+                <ul id="desktop-nav" class="hidden lg:flex gap-8 items-center h-full lg:text-sm">
+                    <li class="relative group">
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Auditing</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/compliance-and-certification.html" class="dropdown-item">Complaince and
+                                    certification</a>
+                            </li>
+                            <li><a href="/threat-management.html" class="dropdown-item">Threat Management</a></li>
+                            <li><a href="/security-infrastructure.html" class="dropdown-item">Security
+                                    Infrastructure</a></li>
+                            <li><a href="/vulnerability-management.html" class="dropdown-item">Vulnerability
+                                    Management</a></li>
+                            <li><a href="/dynamic-penetration-testing.html" class="dropdown-item">Dynamic Penetration
+                                    Testing</a></li>
+                            <li><a href="/fraud-investigation.html" class="dropdown-item">Fraud Investigation</a></li>
+                            <li><a href="/manage-security-operation-center.html" class="dropdown-item">Manage Security
+                                    Operation
+                                    Center</a></li>
+                            <li><a href="/managed-it-security.html" class="dropdown-item">Managed IT Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/web-application-testing.html" class="dropdown-item">Web Application
+                                    Testing</a></li>
+                            <li><a href="/mobile-app-security-testing.html" class="dropdown-item">Mobile App Security
+                                    Testing</a></li>
+                            <li><a href="/network-penetration-testing.html" class="dropdown-item">Network Penetration
+                                    Testing</a></li>
+                            <li><a href="/database-assessment-service.html" class="dropdown-item">Database Assessment
+                                    Service</a></li>
+                            <li><a href="/api-and-web-service-testing.html" class="dropdown-item">API & Web Service
+                                    Testing</a>
+                            </li>
+                            <li><a href="/cloud-security-assessment.html" class="dropdown-item">Cloud Security
+                                    Assessment</a></li>
+                            <li><a href="/scada-and-ics-system-security.html" class="dropdown-item">SCADA & ICS System
+                                    Security</a>
+                            </li>
+                            <li><a href="/source-code-review.html" class="dropdown-item">Source Code Review</a></li>
+                            <li><a href="/firewall-security-review.html" class="dropdown-item">Firewall Security
+                                    Review</a></li>
+                            <li><a href="/ai-machine-learning-testing.html" class="dropdown-item">AI Machine Learning
+                                    Testing</a></li>
+                            <li><a href="/iot-device-security-assessment.html" class="dropdown-item">IoT Device Security
+                                    Assessment</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Add more dropdowns here -->
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Data Privacy</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/gdpr-compliance.html" class="dropdown-item">GDPR Compliance</a></li>
+                            <li><a href="/cyber-insurance.html" class="dropdown-item">Cyber Insurance</a></li>
+                            <li><a href="/privacy-by-design.html" class="dropdown-item">Privacy By Design</a></li>
+                            <li><a href="/vendor-supplier-risk-management.html" class="dropdown-item">Vendor Supplier
+                                    Risk
+                                    Management</a></li>
+                            <li><a href="/avirtual-dpo.html" class="dropdown-item">AVirtual DPO</a></li>
+                            <li><a href="/privacy-impact-assessment.html" class="dropdown-item">Privacy Impact
+                                    Assessment</a></li>
+                            <li><a href="/data-protection-alert.html" class="dropdown-item">Data Protection Alert</a>
+                            </li>
+                            <li><a href="/dpia.html" class="dropdown-item">DPIA</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Company</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/about-us.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="/career.html" class="dropdown-item">Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="nav-link">Training</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/awareness-training.html" class="dropdown-item">Cyber Security Awareness
+                                    Training</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="/verify-certificate.html" class="nav-link">Verify Certificate</a>
+                    </li>
+                </ul>
+                <!-- Right: Get in Touch Button (Always visible) -->
+                <a href="/contact-us.html" class="button3">
+                    <span class="text-sm sm:text-base">Get in Touch</span>
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+
+            </nav>
+            <!-- Floating Mobile Menu -->
+            <div id="mobile-menu" class="absolute top-20 left-4 w-64 text-white shadow-lg rounded-lg p-4 hidden z-40">
+                <ul class="space-y-2">
+                    <li>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400"><a
+                                    href="/index.html">Home</a>
+                            </summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Auditing</summary>
+                            <ul class="pl-6 ">
+                                <li><a href="/compliance-and-certification.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Complaince and
+                                        certification</a></li>
+                                <li><a href="/threat-management.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Threat
+                                        Management</a></li>
+                                <li><a href="/security-infrastructure.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Security
+                                        Infrastructure</a></li>
+                                <li><a href="/vulnerability-management.html"
+                                        class="block text-sm  py-1 hover:text-purple-400">Vulnerability Management</a>
+                                </li>
+                                <li><a href="/dynamic-penetration-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Dynamic
+                                        Penetration Testing</a></li>
+                                <li><a href="/fraud-investigation.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Fraud
+                                        Investigation</a></li>
+                                <li><a href="/manage-security-operation-center.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Manage Security Operation
+                                        Center</a>
+                                </li>
+                                <li><a href="/managed-it-security.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Managed IT
+                                        Security</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Services</summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/web-application-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400">Web
+                                        Application Testing</a></li>
+                                <li><a href="/mobile-app-security-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Mobile
+                                        App Security</a></li>
+                                <li><a href="/network-penetration-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Network
+                                        Penetration Testing</a></li>
+                                <li><a href="/database-assessment-service.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Database
+                                        Assessment</a></li>
+                                <li><a href="/cloud-security-assessment.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Cloud
+                                        Security Assessment</a></li>
+                                <li><a href="/scada-and-ics-system-security.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">SCADA
+                                        &
+                                        ICS System Security</a></li>
+                                <li><a href="/source-code-review.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Source Code
+                                        Review</a></li>
+                                <li><a href="/firewall-security-review.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Firewall
+                                        Security Review</a></li>
+                                <li><a href="/ai-machine-learning-testing.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">AI
+                                        Machine Learning Testing</a></li>
+                                <li><a href="/iot-device-security-assessment.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">IoT
+                                        Device Security Assessment</a></li>
+                            </ul>
+                        </details>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Data Privacy</summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/gdpr-compliance.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">GDPR
+                                        Compliance</a>
+                                </li>
+                                <li><a href="/cyber-insurance.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Cyber
+                                        Insurance</a>
+                                </li>
+                                <li><a href="/privacy-by-design.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Privacy By
+                                        Design</a></li>
+                                <li><a href="/vendor-supplier-risk-management.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Vendor Risk Management</a>
+                                </li>
+                                <li><a href="/privacy-impact-assessment.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Privacy
+                                        Impact Assessment</a></li>
+                                <li><a href="/data-protection-alert.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Data
+                                        Protection
+                                        Alert</a></li>
+                                <li><a href="/dpia.html" class="block text-sm py-1 hover:text-purple-400 ">DPIA</a></li>
+                            </ul>
+                        </details>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400 ">Company
+                            </summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/about-us.html" class="block text-sm py-1 hover:text-purple-400 ">About
+                                        Us</a>
+                                </li>
+                                <li><a href="/verify-certificate.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Verify
+                                        Certificate</a></li>
+                                <li><a href="/career.html" class="block text-sm py-1 hover:text-purple-400 ">Career</a>
+                                </li>
+                            </ul>
+                        </details>
+                        <details class="group">
+                            <summary class="cursor-pointer font-medium hover:text-purple-400">Training</summary>
+                            <ul class="pl-6 mt-2">
+                                <li><a href="/awareness-training.html"
+                                        class="block text-sm py-1 hover:text-purple-400 ">Cyber Security
+                                        Awareness Training</a>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Start Breadcrumb Section -->
+        <section class="relative bg-cover bg-center bg-no-repeat text-white flex justify-center"
+            style="background-image: linear-gradient(270deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.55)), url('assets/img/cynox-security.webp');">
+            <div class="py-20 px-6 md:px-24">
+                <div class="text-5xl font-bold mb-4 text-white">Cynox</div>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-white">Infrastructure and Information Security
+                    Assessment</h1>
+            </div>
+        </section>
+        <!-- End Breadcrumb Section -->
+
+        <!-- Start Apply Position Section -->
+        <div class="apply-position-section pt-130 mb-90 mt-20">
+            <div class="container-fluid one pl--95">
+                <div class="row g-lg-4 gy-5">
+                    <div class="flex flex-wrap lg:flex-nowrap gap-6 w-full">
+                        <!-- Left Section (Job Description) -->
+                        <div class="w-full lg:w-2/3 pr--95">
+                            <div class="job-description mb-30">
+                                <p>An <span class="text-blue-400">Infrastructure and Information Security
+                                        Assessment</span> is the process of evaluating the security posture of an
+                                    organization’s IT infrastructure, systems, and data handling practices. This
+                                    includes identifying vulnerabilities in networks, servers, endpoints, applications,
+                                    and data storage solutions. The assessment aims to uncover risks, test defenses, and
+                                    ensure that security controls are effectively protecting sensitive business
+                                    information from unauthorized access, breaches, or other cyber threats.</p><br>
+
+                                <h2 class="text-purple-500">Why Infrastructure & Information Security Assessment is
+                                    Important:</h2>
+                                <p>As organizations increasingly rely on digital infrastructure to operate, protecting
+                                    that infrastructure has become a top priority. From internal systems and cloud
+                                    platforms to sensitive data and intellectual property, threats can come from many
+                                    vectors. Infrastructure security assessments help detect misconfigurations, outdated
+                                    systems, poor access controls, and other weaknesses that could be exploited.
+                                    Information security evaluations ensure that data is encrypted, properly classified,
+                                    and handled according to industry standards and regulatory requirements like ISO
+                                    27001, NIST, or GDPR. Without such assessments, organizations face heightened risk
+                                    of cyberattacks, data loss, business disruptions, and compliance violations.</p>
+
+                                <br>
+
+                                <h3 class="text-blue-400">Cynox Offerings:</h3>
+                                <ul>
+                                    <li>End-to-End Security Assessments of IT Infrastructure and Data Systems.</li>
+                                    <li>Identification of Security Gaps and Remediation Strategies.</li>
+                                    <li>Compliance Checks with Industry Standards and Regulatory Frameworks.</li>
+                                    <li>Risk-Based Analysis and Prioritization of Critical Assets.</li>
+                                    <li>Vulnerability Assessments and Penetration Testing of Network & Systems.</li>
+                                    <li>Recommendations for Network Hardening and Secure Configuration.</li>
+                                    <li>Security Monitoring, Threat Detection, and Incident Response Planning.</li>
+                                    <li>Consulting on Information Governance and Data Protection Best Practices.</li>
+                                </ul><br>
+                            </div>
+                        </div>
+
+
+                        <!-- Right Section (Job Summary) -->
+                        <div
+                            class="bg-gray-100 rounded-xl p-6 shadow-md border-l-4 h-1/4 w-[400px] mb-10 border-blue-400">
+                            <h4 class="text-lg font-bold text-blue-400 mb-4">Our Services</h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span>
+                                    ISO
+                                    Implementation
+                                </li>
+                                <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span>
+                                    PCI DSS</li>
+                                <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span>
+                                    HIPAA Consulting
+                                </li>
+                                <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span>
+                                    SOC Consulting
+                                </li>
+                                <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span>
+                                    Third Party Risk
+                                    Assessment</li>
+                                <li class="flex items-start"><span class="text-purple-500 font-semibold mr-2">•</span>
+                                    Cloud Security
+                                    Compliance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Apply Position Section -->
+
+
+        <!-- End Apply Position Section -->
+
+    </div>
+    <!--Footer Section-->
+    <footer class="bg-gray-800 text-gray-300 py-12 font-sans text-xs">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-10">
+                <!-- Auditing Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Auditing</h6>
+                    <ul>
+                        <li><a href="/compliance-and-certification.html" class="hover:text-blue-500">Compliance &
+                                Certification</a>
+                        </li>
+                        <li><a href="/threat-management.html" class="hover:text-blue-500">Threat Management</a></li>
+                        <li><a href="/security-infrastructure.html" class="hover:text-blue-500">Security
+                                Infrastructure</a></li>
+                        <li><a href="/vulnerability-management.html" class="hover:text-blue-500">Vulnerability
+                                Management</a></li>
+                        <li><a href="/dynamic-penetration-testing.html" class="hover:text-blue-500">Dynamic Penetration
+                                Testing</a>
+                        </li>
+                        <li><a href="/fraud-investigation.html" class="hover:text-blue-500">Fraud Investigation</a></li>
+                        <li><a href="/manage-security-operation-center.html" class="hover:text-blue-500">Manage Security
+                                Operation
+                                Center</a></li>
+                        <li><a href="/managed-it-security.html" class="hover:text-blue-500">Managed IT Security</a></li>
+                    </ul>
+                </div>
+                <!-- Services Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Services</h6>
+                    <ul>
+                        <li><a href="/web-application-testing.html" class="hover:text-blue-500">Web Application
+                                Testing</a></li>
+                        <li><a href="/mobile-app-security-testing.html" class="hover:text-blue-500">Mobile App Security
+                                Testing</a>
+                        <li><a href="/network-penetration-testing.html" class="hover:text-blue-500">Network Penetration
+                                Testing</a>
+                        </li>
+                        <li><a href="/database-assessment-service.html" class="hover:text-blue-500">Database Assessment
+                                Service</a>
+                        </li>
+                        <li><a href="/api-and-web-service-testing.html" class="hover:text-blue-500">API & Web Service
+                                Testing</a>
+                        </li>
+                        <li><a href="/cloud-security-assessment.html" class="hover:text-blue-500">Cloud Security
+                                Assessment</a></li>
+                        <li><a href="/scada-and-ics-system-security.html" class="hover:text-blue-500">SCADA & ICS System
+                                Security</a>
+                        </li>
+                        <li><a href="/source-code-review.html" class="hover:text-blue-500">Source Code Review</a></li>
+                        <li><a href="/firewall-security-review.html" class="hover:text-blue-500">Firewall Security
+                                Review</a></li>
+                        <li><a href="/ai-machine-learning-testing.html" class="hover:text-blue-500">AI Machine Learning
+                                Testing</a>
+                        </li>
+                        <li><a href="/iot-device-security-assessment.html" class="hover:text-blue-500">IoT Device
+                                Security
+                                Assessment</a></li>
+                    </ul>
+                </div>
+                <!-- Data Privacy Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Data Privacy</h6>
+                    <ul>
+                        <li><a href="/gdpr-compliance.html" class="hover:text-blue-500">GDPR Compliance</a></li>
+                        <li><a href="/cyber-insurance.html" class="hover:text-blue-500">Cyber Insurance</a></li>
+                        <li><a href="/privacy-by-design.html" class="hover:text-blue-500">Privacy By Design</a></li>
+                        <li><a href="/vendor-supplier-risk-management.html" class="hover:text-blue-500">Vendor Supplier
+                                Risk
+                                Management</a></li>
+                        <li><a href="/avirtual-dpo.html" class="hover:text-blue-500">AVirtual DPO</a></li>
+                        <li><a href="/privacy-impact-assessment.html" class="hover:text-blue-500">Privacy Impact
+                                Assessment</a></li>
+                        <li><a href="/data-protection-alert.html" class="hover:text-blue-500">Data Protection Alert</a>
+                        </li>
+                        <li><a href="/dpia.html" class="hover:text-blue-500">DPIA</a></li>
+                    </ul>
+                </div>
+                <!-- Company Section -->
+                <div>
+                    <h6 class="text-sm font-semibold mb-4">Company</h6>
+                    <ul>
+                        <li><a href="/index.html" class="hover:text-blue-500">Home</a></li>
+                        <li><a href="/about-us.html" class="hover:text-blue-500">About Us</a></li>
+                        <li><a href="/career.html" class="hover:text-blue-500">Career</a></li>
+                        <li><a href="/awareness-training.html" class="hover:text-blue-500">Training</a></li>
+                        <li><a href="/contact-us.html" class="hover:text-blue-500">Contact Us</a></li>
+                        <li><a href="/verify-certificate.html" class="hover:text-blue-500">Verify Certificate</a></li>
+                    </ul>
+                </div>
+                <!-- Head Office Section -->
+                <div>
+                    <h6 class="text-base font-semibold mb-4">Head Office</h6>
+                    <p class="hover:text-blue-500">332, 3rd Floor, Ashiana Trade Centre, Adityapur,<br> Jamshedpur,
+                        Jharkhand
+                        831013.<br>Phone No: +91
+                        7303347098<br>Email: support@cynoxsecurity.com</p>
+                    <h6 class="text-base font-semibold mb-3 mt-6">Regional Office</h6>
+                    <p class="hover:text-blue-500">Dwarka Road, Near Dwarka Sector 21 Metro Station, <br> Dwarka, Delhi
+                        Cantonment, Delhi 110078.<br>Phone No:
+                        +91 7303347098<br>Email: support@cynoxsecurity.com</p>
+                    <p class="hover:text-blue-500 mt-2">#808, A Block, Sahakarnagar Bengaluru - 560092, Bengaluru,
+                        Bengaluru
+                        560092.<br>Phone No: +91
+                        7303347098<br>Email: support@cynoxsecurity.com</p>
+                </div>
+                <!-- Image Section (Government Verified Logos) -->
+            </div>
+            <div class="flex justify-between items-center mr-20">
+                <div class="flex justify-center md:justify-start">
+                    <img src="assets/img/log0s.png" alt="Government Verified Logos" class="max-w-full h-auto">
+                </div>
+                <div class="flex items-center">
+                    <ul class="flex space-x-6">
+                        <li><a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A14507092&keywords=cynox%20security%20llp.&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=18436437-20b2-44dc-a36f-f6bcdee5c740&sid=QKE&spellCorrectionEnabled=true"
+                                class="text-gray-400 hover:text-blue-500"><i class="bx bxl-linkedin text-2xl"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/cynoxsecurity.official/"
+                                class="text-gray-400 hover:text-purple-500"><i
+                                    class="bx bxl-instagram-alt text-2xl"></i></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/@CYNOXSECURITY" class="text-gray-400 hover:text-red-500"><i
+                                    class="bx bxl-youtube text-2xl"></i></a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-500"><i
+                                    class="bx bxl-whatsapp text-2xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-10 border-gray-700" />
+            <p class="text-gray-400 text-sm text-center mt-2">Copyright © 2025 Cynox Security. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleBtn = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            if (toggleBtn && mobileMenu) {
+                toggleBtn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle("hidden");
+                });
+            }
+
+            dropdowns.forEach((dropdown) => {
+                const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+                if (!dropdownMenu) return;
+
+                const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+                if (isTouchDevice) {
+                    dropdown.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        dropdownMenu.classList.toggle("hidden");
+                    });
+                } else {
+                    dropdown.addEventListener("mouseenter", () => {
+                        dropdownMenu.classList.remove("hidden");
+                    });
+                    dropdown.addEventListener("mouseleave", () => {
+                        dropdownMenu.classList.add("hidden");
+                    });
+                }
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener("click", (e) => {
+                if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+                    // Check if clicked outside the menu and toggle button
+                    if (!mobileMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                        mobileMenu.classList.add("hidden");
+                    }
+                }
+
+                dropdowns.forEach((dropdown) => {
+                    const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+                    if (dropdownMenu && !dropdownMenu.classList.contains("hidden")) {
+                        if (!dropdown.contains(e.target)) {
+                            dropdownMenu.classList.add("hidden");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
