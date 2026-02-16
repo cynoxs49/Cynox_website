@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cynox Security</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/style.css?v=4" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -66,7 +66,7 @@
             </div>
           </div>
           <!-- Nav Items (Desktop Only) -->
-          <ul id="desktop-nav" class="hidden lg:flex gap-8 items-center h-full lg:text-sm">
+          <ul id="desktop-nav" class="hidden lg:flex gap-5 xl:gap-8 items-center h-full lg:text-xs xl:text-sm">
             <li class="relative group">
               <a href="/index.html" class="nav-link">Home</a>
             </li>
@@ -289,22 +289,22 @@
             </div>
             <!-- Right: Images -->
             <div
-              class="w-full lg:w-1/2 relative hidden md:flex h-80 sm:h-[30rem] md:h-[35rem] lg:h-auto flex-wrap justify-center items-center gap-4">
+              class="w-full lg:w-1/2 relative hidden md:flex h-80 sm:h-96 md:h-[30rem] lg:h-[35rem] flex-wrap justify-center items-center gap-4">
               <!-- Add your cool background or floating effects here -->
               <div class="absolute -z-10 w-full h-full top-0 left-0 opacity-10">
               </div>
               <img src="assets/img/illusion1.png"
-                class="banner-img-html w-80 sm:w-[30rem] md:w-[35rem] lg:w-[500px] xl:w-[800px] opacity-0 absolute" />
+                class="banner-img-html w-64 sm:w-80 md:w-[28rem] lg:w-[32rem] xl:w-[40rem] opacity-0 absolute max-w-full h-auto" />
               <img src="assets/img/illusion2.png"
-                class="banner-img-html w-80 sm:w-[30rem] md:w-[35rem] lg:w-[500px] xl:w-[800px] opacity-0 absolute" />
+                class="banner-img-html w-64 sm:w-80 md:w-[28rem] lg:w-[32rem] xl:w-[40rem] opacity-0 absolute max-w-full h-auto" />
               <img src="assets/img/illusion3.png"
-                class="banner-img-html w-80 sm:w-[30rem] md:w-[35rem] lg:w-[500px] xl:w-[800px] opacity-0 absolute" />
+                class="banner-img-html w-64 sm:w-80 md:w-[28rem] lg:w-[32rem] xl:w-[40rem] opacity-0 absolute max-w-full h-auto" />
               <img src="assets/img/illusion4.png"
-                class="banner-img-html w-80 sm:w-[30rem] md:w-[35rem] lg:w-[500px] xl:w-[800px] opacity-0 absolute" />
+                class="banner-img-html w-64 sm:w-80 md:w-[28rem] lg:w-[32rem] xl:w-[40rem] opacity-0 absolute max-w-full h-auto" />
               <img src="assets/img/illusion5.png"
-                class="banner-img-html w-80 sm:w-[30rem] md:w-[35rem] lg:w-[500px] xl:w-[800px] opacity-0 absolute" />
+                class="banner-img-html w-64 sm:w-80 md:w-[28rem] lg:w-[32rem] xl:w-[40rem] opacity-0 absolute max-w-full h-auto" />
               <img src="assets/img/illusion6.png"
-                class="banner-img-html w-80 sm:w-[30rem] md:w-[35rem] lg:w-[500px] xl:w-[800px] opacity-0 absolute" />
+                class="banner-img-html w-64 sm:w-80 md:w-[28rem] lg:w-[32rem] xl:w-[40rem] opacity-0 absolute max-w-full h-auto" />
             </div>
           </div>
         </div>
@@ -330,8 +330,8 @@
             class="timeline-content w-full flex flex-col xl:flex-row items-center justify-between gap-6 px-1 lg:px-4">
             <!-- Image Left -->
             <div class="image-box w-full xl:w-1/2 flex items-center justify-center">
-              <img class="image-box-el w-full h-auto object-contain max-w-lg" id="timeline-image" src=""
-                alt="Timeline Step" />
+              <img class="image-box-el w-3/4 md:w-2/3 lg:w-full h-auto object-contain max-w-lg" id="timeline-image"
+                src="" alt="Timeline Step" />
             </div>
             <!-- Content Right -->
             <div class="text-block w-full xl:w-1/2 text-center xl:text-left px-1">
@@ -368,8 +368,8 @@
           </div>
           <!-- Right Column -->
           <div class="flex flex-col w-full lg:w-1/2 items-center xl:items-end space-y-10">
-            <!-- Row 1 -->
-            <div class="row row-1 flex flex-wrap justify-center gap-2 sm:gap-6 mx-1">
+            <!-- Grid Container -->
+            <div class="grid grid-cols-2 gap-8 md:gap-16 lg:gap-24 justify-items-center">
               <div
                 class="stat-box bg-gray-900 p-2 lg:p-6 rounded-2xl shadow-2xl text-center flex flex-col justify-center items-center w-40 h-40 sm:w-48 lg:w-60 transition hover:scale-105 duration-300">
                 <h3 class="text-lg sm:text-2xl lg:text-4xl font-extrabold text-blue-400 scramble-text">1.5M+</h3>
@@ -380,9 +380,6 @@
                 <h3 class="text-lg sm:text-2xl lg:text-4xl font-extrabold text-blue-400 scramble-text">950K+</h3>
                 <p class="mt-2 sm:mt-3 text-sm sm:text-base lg:text-xl font-bold text-white">Malware Injections</p>
               </div>
-            </div>
-            <!-- Row 2 -->
-            <div class="row row-2 flex flex-wrap justify-center gap-3 sm:gap-6">
               <div
                 class="stat-box bg-gray-900 p-2 lg:p-6 rounded-2xl shadow-2xl text-center flex flex-col justify-center items-center w-40 h-40 sm:w-48 lg:w-60 transition hover:scale-105 duration-300">
                 <h3 class="text-lg sm:text-2xl lg:text-4xl font-extrabold text-blue-400 scramble-text">2.3B+</h3>
@@ -393,9 +390,6 @@
                 <h3 class="text-lg sm:text-2xl lg:text-4xl font-extrabold text-blue-400 scramble-text">120+</h3>
                 <p class="mt-2 sm:mt-3 text-sm sm:text-base lg:text-xl font-bold text-white">Ransomware Families</p>
               </div>
-            </div>
-            <!-- Row 3 -->
-            <div class="row row-3 flex flex-wrap justify-center gap-3 sm:gap-6">
               <div
                 class="stat-box bg-gray-900 p-4 lg:p-6 rounded-2xl shadow-2xl text-center flex flex-col justify-center items-center w-40 h-40 sm:w-48 lg:w-60 transition hover:scale-105 duration-300">
                 <h3 class="text-lg sm:text-2xl lg:text-4xl font-extrabold text-blue-400 scramble-text">85%</h3>
@@ -845,7 +839,7 @@
             Compliance & GRC Expertise
           </h2>
 
-          <div class="grid gap-10 md:grid-cols-[minmax(0,1.7fr)_minmax(0,1.1fr)] items-start">
+          <div class="grid gap-10 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1.1fr)] items-start">
             <!-- LEFT: your existing text, just grouped -->
             <div class="space-y-6 leading-relaxed text-base sm:text-lg">
               <p>

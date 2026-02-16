@@ -768,7 +768,8 @@ body {
   content: "";
   position: absolute;
   top: -20px;
-  left: -60px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 83%;
   height: 110%;
   background: #5800ff;
@@ -781,11 +782,11 @@ body {
   content: "";
   position: absolute;
   top: 10px;
-  left: -20px;
+  left: 50%;
   width: 85%;
   height: 90%;
   background: #00b4d8;
-  transform: rotate(20deg);
+  transform: translateX(-50%) rotate(20deg);
   border-radius: 79% 21% 75% 25% / 30% 66% 34% 70%;
   opacity: 0.6;
   z-index: -1;
